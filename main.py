@@ -5,12 +5,12 @@ import os
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 
-telegram_bot_token = os.environ["TELEGRAM_BOT_TOKEN"]
-owner_id = os.environ["OWNER_ID"]
-url = os.environ["URL"]
-upload_file_key = os.environ["UPLOAD_FILE_KEY"]
-secret_key = os.environ["SECRET_KEY"]
-secret_value = os.environ["SECRET_VALUE"]
+telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+owner_id = os.getenv("OWNER_ID")
+url = os.getenv("URL")
+upload_file_key = os.getenv("UPLOAD_FILE_KEY")
+secret_key = os.getenv("SECRET_KEY")
+secret_value = os.getenv("SECRET_VALUE")
 
 def is_owner(update):
     allowed = False
