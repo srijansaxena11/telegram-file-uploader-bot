@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 telegram_bot_token = os.environ["TELEGRAM_BOT_TOKEN"]
 owner_id = os.environ["OWNER_ID"]
 url = os.environ["URL"]
-upload_file_key = os.environ["UPLOAD_KEY_FILE"]
+upload_file_key = os.environ["UPLOAD_FILE_KEY"]
 secret_key = os.environ["SECRET_KEY"]
 secret_value = os.environ["SECRET_VALUE"]
 
