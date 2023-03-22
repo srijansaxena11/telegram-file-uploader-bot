@@ -2,6 +2,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import requests
 import logging
 import os
+import traceback
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 
@@ -32,6 +33,7 @@ def upload_file(update, context):
             context.bot.send_message(chat_id=update.message.chat_id, text="File uploaded successfully.")
         except Exception as e:
             context.bot.send_message(chat_id=update.message.chat_id, text="Something went wrong:\n"+str(e))
+            context.bot.send_message(chat_id=update.message.chat_id, text="Backtrace:\n"+str(traceback.format_exc()))
     else:
         context.bot.send_message(chat_id=update.message.chat_id, reply_to_message_id=update.message.message_id, text='You are not the owner.')
 
