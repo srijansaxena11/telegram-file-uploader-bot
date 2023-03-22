@@ -17,4 +17,9 @@ This is a simple Telegram bot that will accept files from users and upload them 
 3. Run the main.py file and start sending files to your bot on Telegram. The bot will reply with the response from the URL after uploading each file.
 
 
---Thanks to Bing ChatGPT for generating this accurate Readme File
+
+
+
+
+
+`--Thanks to Bing ChatGPT for generating this accurate README File`
